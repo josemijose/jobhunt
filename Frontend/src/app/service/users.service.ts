@@ -2,7 +2,7 @@ import { HttpClient } from "@angular/common/http";
 import { Inject,Injectable } from "@angular/core";
 import { User } from "../model/users.model";
 import { BehaviorSubject } from "rxjs";
-
+// const userid="id"
 @Injectable({
     providedIn: 'root',
 })
@@ -14,6 +14,8 @@ export class UserService{
      }
      getUsers(){
         return this.http.get<User[]>(this.baseUrl);
+        // localStorage.setItem(userid, User.userId);
+
      }
      getUserById(id:number){
          return this.http.get<User>(this.baseUrl+'/'+id);
@@ -21,4 +23,9 @@ export class UserService{
      addUsers(user: User){
         return this.http.post(this.baseUrl,user);
      }
+    //  public getProfile(){
+    //     const userid=localStorage.getItem(userid)
+    //     return this.http.get(this.baseUrl+"/"+userid);
+    //   }
+      
 }

@@ -8,6 +8,7 @@ import { RegistrationComponent } from "./registration/registration.component";
 import { DashboardComponent } from "./dashboard/dashboard.component";
 import { SearchComponent } from "./search/search.component";
 import { FavouritesComponent } from "./favourites/favourites.component";
+import { EdituserComponent } from "./edituser/edituser.component";
 
 export const routes:Routes = [
     {path: '',component:HomeComponent},
@@ -16,6 +17,9 @@ export const routes:Routes = [
     {path: 'dashboard',component:DashboardComponent,canActivate:[AuthGuard]},
     {path: 'search',component:SearchComponent,canActivate:[AuthGuard]},
     {path: 'favourites',component:FavouritesComponent,canActivate:[AuthGuard]},
+    {path: 'edituser',component:EdituserComponent,canActivate:[AuthGuard]},
+
+
 
   
     {path: '**',component:HomeComponent}

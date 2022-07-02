@@ -1,20 +1,12 @@
 <div class="container" style="background-color:rgb(124, 195, 227);">
-    <!-- <div class="navbar">
-        <div class="nav-left">
-
-        </div>
-        <div class="nav-right">
-            <a href="">profile</a>
-            <a href="" (click)="signOut()">logout</a>
-        </div>
-    </div> -->
+    
     <div class="navbar">
       <div class="nav-left"></div>
 <div class="nav-right">
-   <button class="btn1" [routerLink]="'/search'">Search</button>
-   <button class="btn1"><a href=''>Edit User</a></button>
-   <button class="btn1"><a href="/favourites">Favourites</a></button>
-   <button class="btn1"><a href="">Log Out</a></button>
+   <button class="btn1" ><a routerLink="/search">Search</a></button>
+   <!-- <button class="btn1"><a routerLink="/edituser">Edit User</a></button> -->
+   <button class="btn1"><a routerLink="/favourites">Favourites</a></button>
+   <button class="btn1"><a routerLink="" (click)="signOut()">Log out</a></button>
 </div>
 </div>
 
@@ -57,5 +49,4 @@
     </div>
       
     
-    
-<!-- </div> -->
+

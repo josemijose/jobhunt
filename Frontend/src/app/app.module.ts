@@ -11,7 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { SearchComponent } from './search/search.component';
 import { FormsModule } from '@angular/forms';
 import { FavouritesComponent } from './favourites/favourites.component';
-
+import { EdituserComponent } from './edituser/edituser.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +20,8 @@ import { FavouritesComponent } from './favourites/favourites.component';
     DashboardComponent,
     LoginComponent,
     SearchComponent,
-    FavouritesComponent
+    FavouritesComponent,
+    EdituserComponent
   
   ],
   imports: [
